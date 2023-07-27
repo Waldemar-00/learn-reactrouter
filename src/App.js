@@ -13,6 +13,7 @@ function App() {
             <Route index path='first' element={<First/>}/>
             <Route path='second' element={<Second/>}/>
             <Route path='third' element={<Third />} />
+            <Route path='*' element={<h2>Error 404 - no such page</h2>}/>
           </Route>
         </Routes>
         </BrowserRouter>
