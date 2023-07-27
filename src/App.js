@@ -9,10 +9,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Layout/>} >
-            <Route index path='first' element={<First/>}/>
+          <Route path='/' element={<Layout />} >
+            <Route index element={<h1>React Router</h1>}/>
+            <Route path='first' element={<First/>}/>
             <Route path='second' element={<Second/>}/>
-            <Route path='third' element={<Third />} />
+            <Route index path='third' element={<Third />} />
             <Route path='*' element={<h2>Error 404 - no such page</h2>}/>
           </Route>
         </Routes>
